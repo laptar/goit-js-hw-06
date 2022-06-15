@@ -11,6 +11,7 @@ let newNum = 0;
 numberEl.addEventListener("blur", hendleInput);
 function hendleInput(event) {
 	numberEl.style.backgroundColor = "inherit";
+	newNum = 0;
 	if (event.target.value > 100) {
 		numberEl.style.backgroundColor = "#FF6E6E";
 	} else {
