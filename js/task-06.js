@@ -1,8 +1,8 @@
 const inputEl = document.querySelector("#validation-input");
 
-inputEl.addEventListener("blur", validation);
+inputEl.addEventListener("blur", handleValidation);
 
-function validation(event) {
+function handleValidation(event) {
 	if (!event.target.value) inputEl.removeAttribute("class");
 	if (
 		event.target.value &&
